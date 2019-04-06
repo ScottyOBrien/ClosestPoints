@@ -11,6 +11,8 @@ import java.io.*;
 
 public class ClosestPoints {
 
+    private ArrayList<Point> pointListX = new ArrayList<Point>();
+
     public static void main(String[] args) {
 
         //Get the file name from the user. Using scanner.
@@ -21,7 +23,6 @@ public class ClosestPoints {
         //File file;
         //Grab data from file using buffered reader, we'll adjust this later to put the points into their respective
         //arrays. Also instantiate our arraylist of point values
-        private ArrayList<Point> pointListX = new ArrayList<Point>();
         BufferedReader reader;
         try {
             reader = new BufferedReader(new FileReader(fileName));
